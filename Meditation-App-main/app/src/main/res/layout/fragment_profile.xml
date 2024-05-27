@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C27B0"
+    tools:context=".Profile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:orientation="vertical"
+            android:background="@drawable/musicplayer_view_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                tools:progress="50"
+                android:progressDrawable="@drawable/progressbar" />
+            <TextView
+                android:id="@+id/progress_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ваш средний балл равен: 50"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="#423C3C"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Достижения..!"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="#009688"/>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <soup.neumorphism.NeumorphImageView
+                    android:id="@+id/achievement_1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:layout_height="100dp"
+                    android:padding="25dp"
+                    app:neumorph_strokeColor="#4A4545"
+                    app:neumorph_strokeWidth="2dp"
+                    android:src="@drawable/lock"
+                    app:neumorph_backgroundColor="@color/black"
+                    />
+
+                <soup.neumorphism.NeumorphImageView
+                    android:id="@+id/achievement_2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:clickable="true"
+                    android:padding="25dp"
+                    app:neumorph_strokeColor="#4A4545"
+                    app:neumorph_strokeWidth="2dp"
+                    android:src="@drawable/lock"
+                    app:neumorph_backgroundColor="@color/black"/>
+                <soup.neumorphism.NeumorphImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:clickable="true"
+                    android:id="@+id/achievement_3"
+                    android:padding="25dp"
+                    app:neumorph_strokeColor="#4A4545"
+                    app:neumorph_strokeWidth="2dp"
+                    android:src="@drawable/lock"
+                    app:neumorph_backgroundColor="@color/black"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="Связь с нами"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:background="@color/teal_200"
+                android:id="@+id/emailbtn"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+        <soup.neumorphism.NeumorphImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="20dp"
+            android:elevation="25dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:neumorph_backgroundColor="@color/purple_200"
+            app:neumorph_shadowColorDark="@android:color/transparent"
+            app:neumorph_shadowColorLight="@android:color/transparent"
+            app:neumorph_strokeColor="@color/purple_700"
+            app:neumorph_strokeWidth="2dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
